@@ -1,0 +1,40 @@
+May 12 18:04:20.280 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 18:04:20.280 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54386.
+May 12 18:04:20.297 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 18:04:20.298 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 18:04:20.298 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 18:04:20.299 HYPERVISOR: exec_cmd: vm create R2 4 c3725 
+May 12 18:04:20.300 VM: VM R2 created.
+May 12 18:04:20.300 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5011 
+May 12 18:04:20.301 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+May 12 18:04:20.302 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 12 18:04:20.303 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 12 18:04:20.304 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/erick/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+May 12 18:04:20.306 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
+May 12 18:04:25.428 HYPERVISOR: exec_cmd: nio create_udp udp-b965f8ce-dfdb-47c3-bbe1-f02fdb6fabaa 10051 127.0.0.1 10050 
+May 12 18:04:25.430 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-b965f8ce-dfdb-47c3-bbe1-f02fdb6fabaa 
+May 12 18:04:25.431 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:04:52.724 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 12 18:04:52.726 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3725-adventerprisek9-mz124-15.image-128.ghost 
+May 12 18:04:52.727 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:04:52.727 HYPERVISOR: exec_cmd: vm start R2 
+May 12 18:05:28.777 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:05:28.778 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 0 0 
+May 12 18:05:28.794 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+May 12 18:05:28.795 HYPERVISOR: exec_cmd: nio delete udp-b965f8ce-dfdb-47c3-bbe1-f02fdb6fabaa 
+May 12 18:05:33.251 HYPERVISOR: exec_cmd: nio create_udp udp-fdb096ef-b30c-4b77-a38b-3f1e740b7f05 10050 127.0.0.1 10051 
+May 12 18:05:33.254 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-fdb096ef-b30c-4b77-a38b-3f1e740b7f05 
+May 12 18:05:33.255 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:05:33.256 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 0 1 
+May 12 18:07:08.947 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+May 12 18:07:49.251 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:07:49.252 HYPERVISOR: exec_cmd: vm stop R2 
+May 12 18:07:49.328 VM: VM R2 shutdown.
+May 12 18:07:49.329 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 12 18:07:53.996 HYPERVISOR: exec_cmd: vm get_status R2 
+May 12 18:07:54.000 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 12 18:07:54.001 HYPERVISOR: exec_cmd: vm delete R2 
+May 12 18:07:54.001 VM: VM R2 destroyed.
+May 12 18:07:54.010 HYPERVISOR: exec_cmd: hypervisor stop 
+May 12 18:07:54.127 HYPERVISOR: Stopped.
+May 12 18:07:54.127 GENERAL: reset done.

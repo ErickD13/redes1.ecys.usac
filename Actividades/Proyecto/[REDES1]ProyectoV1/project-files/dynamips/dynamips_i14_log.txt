@@ -1,0 +1,18 @@
+May 12 20:03:06.379 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 20:03:06.379 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54753.
+May 12 20:03:06.396 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 20:03:06.396 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 20:03:06.396 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 20:03:06.397 HYPERVISOR: exec_cmd: ethsw create SW3 
+May 12 20:03:34.777 HYPERVISOR: exec_cmd: ethsw rename SW3 RRHH 
+May 12 20:15:04.422 HYPERVISOR: exec_cmd: nio create_udp udp-c6c86c15-aa7e-4aac-9f2d-e60d60dcfb19 10010 127.0.0.1 10011 
+May 12 20:15:04.436 HYPERVISOR: exec_cmd: ethsw add_nio RRHH udp-c6c86c15-aa7e-4aac-9f2d-e60d60dcfb19 
+May 12 20:15:04.446 HYPERVISOR: exec_cmd: ethsw set_access_port RRHH udp-c6c86c15-aa7e-4aac-9f2d-e60d60dcfb19 1 
+May 12 20:29:20.990 HYPERVISOR: exec_cmd: ethsw set_access_port RRHH udp-c6c86c15-aa7e-4aac-9f2d-e60d60dcfb19 40 
+May 13 00:50:19.920 HYPERVISOR: exec_cmd: nio create_udp udp-69d2bbe0-8f02-4f04-95b1-530846c66fcc 10079 127.0.0.1 10078 
+May 13 00:50:19.928 HYPERVISOR: exec_cmd: ethsw add_nio RRHH udp-69d2bbe0-8f02-4f04-95b1-530846c66fcc 
+May 13 00:50:19.944 HYPERVISOR: exec_cmd: ethsw set_access_port RRHH udp-69d2bbe0-8f02-4f04-95b1-530846c66fcc 40 
+May 13 15:08:19.875 HYPERVISOR: exec_cmd: ethsw delete RRHH 
+May 13 15:08:19.921 HYPERVISOR: exec_cmd: hypervisor stop 
+May 13 15:08:20.062 HYPERVISOR: Stopped.
+May 13 15:08:20.062 GENERAL: reset done.

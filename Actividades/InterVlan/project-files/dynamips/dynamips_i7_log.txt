@@ -1,0 +1,23 @@
+Mar 19 12:03:29.526 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 19 12:03:29.526 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58186.
+Mar 19 12:03:29.545 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 12:03:29.546 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/InterVlan/project-files/dynamips 
+Mar 19 12:03:29.546 GENERAL: working_dir=/Users/erick/GNS3/projects/InterVlan/project-files/dynamips
+Mar 19 12:03:29.547 HYPERVISOR: exec_cmd: vm create R1 4 c7200 
+Mar 19 12:03:29.548 VM: VM R1 created.
+Mar 19 12:03:29.549 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Mar 19 12:03:29.551 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Mar 19 12:03:29.552 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:03:29.553 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Mar 19 12:03:29.554 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Mar 19 12:03:29.555 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Mar 19 12:03:29.557 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/erick/GNS3/images/IOS/c7200-p-mz.123-19.image 
+Mar 19 12:03:29.557 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 19 12:03:29.562 HYPERVISOR: exec_cmd: vm set_config R1 configs/i4_startup-config.cfg 
+Mar 19 23:06:17.679 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 23:06:17.681 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 19 23:06:17.682 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 19 23:06:17.682 VM: VM R1 destroyed.
+Mar 19 23:06:17.683 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 23:06:18.128 HYPERVISOR: Stopped.
+Mar 19 23:06:18.129 GENERAL: reset done.

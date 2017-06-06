@@ -1,0 +1,20 @@
+Mar 19 11:54:06.027 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 19 11:54:06.027 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58126.
+Mar 19 11:54:06.050 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 11:54:06.051 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/InterVlan/project-files/dynamips 
+Mar 19 11:54:06.051 GENERAL: working_dir=/Users/erick/GNS3/projects/InterVlan/project-files/dynamips
+Mar 19 11:54:06.052 HYPERVISOR: exec_cmd: vm create R1 2 c3725 
+Mar 19 11:54:06.052 VM: VM R1 created.
+Mar 19 11:54:06.053 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Mar 19 11:54:06.054 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Mar 19 11:54:06.054 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 19 11:54:06.055 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/erick/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Mar 19 11:54:06.056 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 19 11:54:06.058 HYPERVISOR: exec_cmd: vm set_config R1 configs/i2_startup-config.cfg 
+Mar 19 11:57:09.634 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 11:57:09.635 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 19 11:57:09.636 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 19 11:57:09.637 VM: VM R1 destroyed.
+Mar 19 11:57:09.649 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 11:57:10.012 HYPERVISOR: Stopped.
+Mar 19 11:57:10.012 GENERAL: reset done.

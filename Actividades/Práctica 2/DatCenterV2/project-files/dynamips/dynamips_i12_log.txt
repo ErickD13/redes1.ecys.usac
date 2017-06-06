@@ -1,0 +1,22 @@
+Mar 21 23:27:07.060 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Mar 21 23:27:07.062 HYPERVISOR: Started on IP = 192.168.6.20, TCP port = 52063.
+Mar 21 23:27:07.681 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 21 23:27:07.872 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DatCenterV2\project-files\dynamips 
+Mar 21 23:27:07.872 GENERAL: working_dir=C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DatCenterV2\project-files\dynamips
+Mar 21 23:27:07.961 HYPERVISOR: exec_cmd: ethsw create SW1 
+Mar 21 23:27:08.609 HYPERVISOR: exec_cmd: nio create_udp udp-e0116a2c-44f0-4c9e-9c1c-86a782f30746 10025 192.168.6.20 10024 
+Mar 21 23:27:08.736 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-e0116a2c-44f0-4c9e-9c1c-86a782f30746 
+Mar 21 23:27:08.906 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-e0116a2c-44f0-4c9e-9c1c-86a782f30746 10 
+Mar 21 23:27:09.076 HYPERVISOR: exec_cmd: nio create_udp udp-219e8afa-4702-4c03-b895-b578c140831e 10026 192.168.6.20 10027 
+Mar 21 23:27:09.228 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-219e8afa-4702-4c03-b895-b578c140831e 
+Mar 21 23:27:09.316 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-219e8afa-4702-4c03-b895-b578c140831e 20 
+Mar 21 23:27:09.434 HYPERVISOR: exec_cmd: nio create_udp udp-e22f8128-3e7f-4e80-a5e9-e3609b6fa766 10029 192.168.6.20 10028 
+Mar 21 23:27:09.465 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-e22f8128-3e7f-4e80-a5e9-e3609b6fa766 
+Mar 21 23:27:09.485 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-e22f8128-3e7f-4e80-a5e9-e3609b6fa766 1 
+Mar 21 23:27:09.557 HYPERVISOR: exec_cmd: nio create_udp udp-4225ae55-821e-4727-a5bc-834168e0611d 10031 192.168.6.20 10030 
+Mar 21 23:27:09.622 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-4225ae55-821e-4727-a5bc-834168e0611d 
+Mar 21 23:27:09.650 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-4225ae55-821e-4727-a5bc-834168e0611d 1 
+Mar 21 23:49:39.129 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Mar 21 23:49:39.346 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 21 23:49:39.451 HYPERVISOR: Stopped.
+Mar 21 23:49:39.451 GENERAL: reset done.

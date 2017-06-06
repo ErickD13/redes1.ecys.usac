@@ -1,0 +1,17 @@
+May 12 20:20:15.879 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 20:20:15.879 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54857.
+May 12 20:20:15.900 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 20:20:15.901 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 20:20:15.901 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 20:20:15.902 HYPERVISOR: exec_cmd: ethsw create SW4 
+May 12 20:24:00.519 HYPERVISOR: exec_cmd: ethsw rename SW4 INFORMATICA 
+May 12 20:35:37.894 HYPERVISOR: exec_cmd: nio create_udp udp-3d4c277b-abe6-4078-bda7-a4eb9e69b353 10042 127.0.0.1 10043 
+May 12 20:35:37.904 HYPERVISOR: exec_cmd: ethsw add_nio INFORMATICA udp-3d4c277b-abe6-4078-bda7-a4eb9e69b353 
+May 12 20:35:37.909 HYPERVISOR: exec_cmd: ethsw set_access_port INFORMATICA udp-3d4c277b-abe6-4078-bda7-a4eb9e69b353 30 
+May 13 00:51:31.555 HYPERVISOR: exec_cmd: nio create_udp udp-2b3a203b-7aca-4a92-98fb-15e42934dfff 10087 127.0.0.1 10086 
+May 13 00:51:31.559 HYPERVISOR: exec_cmd: ethsw add_nio INFORMATICA udp-2b3a203b-7aca-4a92-98fb-15e42934dfff 
+May 13 00:51:31.571 HYPERVISOR: exec_cmd: ethsw set_access_port INFORMATICA udp-2b3a203b-7aca-4a92-98fb-15e42934dfff 30 
+May 13 15:08:19.874 HYPERVISOR: exec_cmd: ethsw delete INFORMATICA 
+May 13 15:08:19.914 HYPERVISOR: exec_cmd: hypervisor stop 
+May 13 15:08:20.061 HYPERVISOR: Stopped.
+May 13 15:08:20.061 GENERAL: reset done.

@@ -1,0 +1,50 @@
+May 11 21:51:38.551 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 11 21:51:38.551 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51488.
+May 11 21:51:38.594 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 21:51:38.600 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/[Redes1]Practica_2_Oficina_Central/[Redes1]Practica_2_Oficina_Central/project-files/dynamips 
+May 11 21:51:38.600 GENERAL: working_dir=/Users/erick/GNS3/projects/[Redes1]Practica_2_Oficina_Central/[Redes1]Practica_2_Oficina_Central/project-files/dynamips
+May 11 21:51:38.605 HYPERVISOR: exec_cmd: vm create ESW1 7 c3725 
+May 11 21:51:38.605 VM: VM ESW1 created.
+May 11 21:51:38.609 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+May 11 21:51:38.618 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+May 11 21:51:38.636 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/erick/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+May 11 21:51:38.641 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 11 21:51:38.645 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 11 21:51:38.648 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c207.4e43.0000 
+May 11 21:51:38.652 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:38.658 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60bf8d80 
+May 11 21:51:38.663 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:38.668 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 11 21:51:38.673 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i7_startup-config.cfg 
+May 11 21:51:38.932 HYPERVISOR: exec_cmd: nio create_udp udp-d1c37a2a-8b57-4c9d-8252-c494b16f8f5b 10001 127.0.0.1 10000 
+May 11 21:51:38.942 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-d1c37a2a-8b57-4c9d-8252-c494b16f8f5b 
+May 11 21:51:38.964 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:38.993 HYPERVISOR: exec_cmd: nio create_udp udp-51beb605-6581-4c08-b6c6-229e971be12e 10002 127.0.0.1 10003 
+May 11 21:51:38.998 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-51beb605-6581-4c08-b6c6-229e971be12e 
+May 11 21:51:39.014 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:39.035 HYPERVISOR: exec_cmd: nio create_udp udp-fa58c94c-5c5d-4fcd-8f75-f6731e9a4a1b 10004 127.0.0.1 10005 
+May 11 21:51:39.040 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-fa58c94c-5c5d-4fcd-8f75-f6731e9a4a1b 
+May 11 21:51:39.058 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:39.079 HYPERVISOR: exec_cmd: nio create_udp udp-bc70be0a-239d-4fb2-b8fd-abfb4128d068 10010 127.0.0.1 10011 
+May 11 21:51:39.084 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-bc70be0a-239d-4fb2-b8fd-abfb4128d068 
+May 11 21:51:39.108 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:51:39.125 HYPERVISOR: exec_cmd: nio create_udp udp-ecf2488e-1d4f-4119-96c5-12bf6a6f5b35 10012 127.0.0.1 10013 
+May 11 21:51:39.136 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-ecf2488e-1d4f-4119-96c5-12bf6a6f5b35 
+May 11 21:51:39.173 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:54:18.652 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+May 11 21:54:18.656 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 c3725-adventerprisek9-mz124-15.image-128.ghost 
+May 11 21:54:18.662 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 21:54:18.664 HYPERVISOR: exec_cmd: vm start ESW1 
+May 11 22:05:19.083 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 11 22:05:20.152 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 22:05:20.167 HYPERVISOR: exec_cmd: vm stop ESW1 
+May 11 22:05:20.327 VM: VM ESW1 shutdown.
+May 11 22:05:20.347 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 11 22:05:23.146 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 11 22:05:24.370 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 11 22:05:24.377 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 11 22:05:24.395 HYPERVISOR: exec_cmd: vm delete ESW1 
+May 11 22:05:24.395 VM: VM ESW1 destroyed.
+May 11 22:05:24.406 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 22:05:24.537 HYPERVISOR: Stopped.
+May 11 22:05:24.537 GENERAL: reset done.

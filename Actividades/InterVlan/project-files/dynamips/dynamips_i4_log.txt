@@ -1,0 +1,39 @@
+Mar 19 11:57:11.955 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 19 11:57:11.955 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58148.
+Mar 19 11:57:11.973 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 11:57:11.974 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/InterVlan/project-files/dynamips 
+Mar 19 11:57:11.974 GENERAL: working_dir=/Users/erick/GNS3/projects/InterVlan/project-files/dynamips
+Mar 19 11:57:11.975 HYPERVISOR: exec_cmd: vm create R1 3 c3725 
+Mar 19 11:57:11.975 VM: VM R1 created.
+Mar 19 11:57:11.976 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Mar 19 11:57:11.976 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Mar 19 11:57:11.977 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 19 11:57:11.979 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/erick/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Mar 19 11:57:11.980 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 19 11:57:11.982 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Mar 19 11:59:30.643 HYPERVISOR: exec_cmd: nio create_udp udp-42d80706-b96a-46ee-a137-35f06e979908 10003 127.0.0.1 10002 
+Mar 19 11:59:30.645 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-42d80706-b96a-46ee-a137-35f06e979908 
+Mar 19 11:59:30.646 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:01:16.194 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:01:16.195 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Mar 19 12:01:16.196 HYPERVISOR: exec_cmd: nio delete udp-42d80706-b96a-46ee-a137-35f06e979908 
+Mar 19 12:01:22.377 HYPERVISOR: exec_cmd: nio create_udp udp-6230aeec-fa4b-45b9-b4a3-58f3174eab4a 10001 127.0.0.1 10000 
+Mar 19 12:01:22.379 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-6230aeec-fa4b-45b9-b4a3-58f3174eab4a 
+Mar 19 12:01:22.380 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:01:27.614 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:01:27.615 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Mar 19 12:01:27.616 HYPERVISOR: exec_cmd: nio delete udp-6230aeec-fa4b-45b9-b4a3-58f3174eab4a 
+Mar 19 12:01:31.064 HYPERVISOR: exec_cmd: nio create_udp udp-cee18fba-b341-4486-bbde-eca4782c236e 10000 127.0.0.1 10001 
+Mar 19 12:01:31.066 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-cee18fba-b341-4486-bbde-eca4782c236e 
+Mar 19 12:01:31.067 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:02:47.269 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Mar 19 12:03:25.007 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:03:25.009 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Mar 19 12:03:25.010 HYPERVISOR: exec_cmd: nio delete udp-cee18fba-b341-4486-bbde-eca4782c236e 
+Mar 19 12:03:25.012 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 19 12:03:25.013 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 19 12:03:25.014 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 19 12:03:25.014 VM: VM R1 destroyed.
+Mar 19 12:03:25.024 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 12:03:25.450 HYPERVISOR: Stopped.
+Mar 19 12:03:25.450 GENERAL: reset done.

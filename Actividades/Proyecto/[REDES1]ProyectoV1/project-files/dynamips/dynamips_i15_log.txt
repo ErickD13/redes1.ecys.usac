@@ -1,0 +1,23 @@
+May 12 20:03:10.019 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 20:03:10.019 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54755.
+May 12 20:03:10.037 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 20:03:10.038 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 20:03:10.039 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 20:03:10.039 HYPERVISOR: exec_cmd: ethsw create SW4 
+May 12 20:03:42.512 HYPERVISOR: exec_cmd: ethsw rename SW4 CONTABILIDAD 
+May 12 20:08:09.360 HYPERVISOR: exec_cmd: nio create_udp udp-4642c1a6-21e8-4894-8848-31022118297d 10006 127.0.0.1 10007 
+May 12 20:08:09.366 HYPERVISOR: exec_cmd: ethsw add_nio CONTABILIDAD udp-4642c1a6-21e8-4894-8848-31022118297d 
+May 12 20:08:09.385 HYPERVISOR: exec_cmd: ethsw set_dot1q_port CONTABILIDAD udp-4642c1a6-21e8-4894-8848-31022118297d 1 
+May 12 20:08:16.722 HYPERVISOR: exec_cmd: nio create_udp udp-a7b13309-73c4-45d8-ba47-10f275a00837 10009 127.0.0.1 10008 
+May 12 20:08:16.723 HYPERVISOR: exec_cmd: ethsw add_nio CONTABILIDAD udp-a7b13309-73c4-45d8-ba47-10f275a00837 
+May 12 20:08:16.736 HYPERVISOR: exec_cmd: ethsw set_access_port CONTABILIDAD udp-a7b13309-73c4-45d8-ba47-10f275a00837 10 
+May 12 20:11:49.898 HYPERVISOR: exec_cmd: ethsw set_access_port CONTABILIDAD udp-4642c1a6-21e8-4894-8848-31022118297d 10 
+May 12 20:19:03.397 HYPERVISOR: exec_cmd: ethsw remove_nio CONTABILIDAD udp-4642c1a6-21e8-4894-8848-31022118297d 
+May 12 20:19:03.424 HYPERVISOR: exec_cmd: nio delete udp-4642c1a6-21e8-4894-8848-31022118297d 
+May 13 00:50:24.249 HYPERVISOR: exec_cmd: nio create_udp udp-fc952a94-764c-478f-81fc-c5324bdf8c1c 10081 127.0.0.1 10080 
+May 13 00:50:24.258 HYPERVISOR: exec_cmd: ethsw add_nio CONTABILIDAD udp-fc952a94-764c-478f-81fc-c5324bdf8c1c 
+May 13 00:50:24.276 HYPERVISOR: exec_cmd: ethsw set_access_port CONTABILIDAD udp-fc952a94-764c-478f-81fc-c5324bdf8c1c 10 
+May 13 15:08:19.875 HYPERVISOR: exec_cmd: ethsw delete CONTABILIDAD 
+May 13 15:08:19.915 HYPERVISOR: exec_cmd: hypervisor stop 
+May 13 15:08:20.061 HYPERVISOR: Stopped.
+May 13 15:08:20.061 GENERAL: reset done.

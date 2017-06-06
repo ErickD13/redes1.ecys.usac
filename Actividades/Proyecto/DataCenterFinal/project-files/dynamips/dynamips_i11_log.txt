@@ -1,0 +1,16 @@
+Mar 21 23:27:06.661 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Mar 21 23:27:06.673 HYPERVISOR: Started on IP = 192.168.6.20, TCP port = 52062.
+Mar 21 23:27:07.259 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 21 23:27:07.305 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DatCenterV2\project-files\dynamips 
+Mar 21 23:27:07.305 GENERAL: working_dir=C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DatCenterV2\project-files\dynamips
+Mar 21 23:27:07.381 HYPERVISOR: exec_cmd: ethsw create SW2 
+Mar 21 23:27:07.779 HYPERVISOR: exec_cmd: nio create_udp udp-7228721b-5e40-4e79-b7e8-c7dcd4a9810a 10022 192.168.6.20 10023 
+Mar 21 23:27:07.911 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-7228721b-5e40-4e79-b7e8-c7dcd4a9810a 
+Mar 21 23:27:08.009 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-7228721b-5e40-4e79-b7e8-c7dcd4a9810a 10 
+Mar 21 23:27:08.869 HYPERVISOR: exec_cmd: nio create_udp udp-7b0a9a72-e971-4567-8998-92aa37e87a54 10028 192.168.6.20 10029 
+Mar 21 23:27:08.925 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-7b0a9a72-e971-4567-8998-92aa37e87a54 
+Mar 21 23:27:09.087 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW2 udp-7b0a9a72-e971-4567-8998-92aa37e87a54 1 
+Mar 21 23:49:39.136 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Mar 21 23:49:39.263 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 21 23:49:39.451 HYPERVISOR: Stopped.
+Mar 21 23:49:39.451 GENERAL: reset done.

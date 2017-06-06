@@ -1,0 +1,38 @@
+May 11 21:51:38.453 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 11 21:51:38.454 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51487.
+May 11 21:51:38.484 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 21:51:38.495 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/[Redes1]Practica_2_Oficina_Central/[Redes1]Practica_2_Oficina_Central/project-files/dynamips 
+May 11 21:51:38.495 GENERAL: working_dir=/Users/erick/GNS3/projects/[Redes1]Practica_2_Oficina_Central/[Redes1]Practica_2_Oficina_Central/project-files/dynamips
+May 11 21:51:38.496 HYPERVISOR: exec_cmd: vm create R1 2 c3725 
+May 11 21:51:38.497 VM: VM R1 created.
+May 11 21:51:38.556 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+May 11 21:51:38.573 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+May 11 21:51:38.580 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/erick/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+May 11 21:51:38.585 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 11 21:51:38.593 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+May 11 21:51:38.597 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 11 21:51:38.601 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c202.3035.0000 
+May 11 21:51:38.606 HYPERVISOR: exec_cmd: vm set_config R1 configs/i2_startup-config.cfg 
+May 11 21:51:38.780 HYPERVISOR: exec_cmd: nio create_udp udp-2660f811-078e-4cf9-bf43-8b84ba9a6f52 30000 172.16.0.1 20000 
+May 11 21:51:38.797 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 16 udp-2660f811-078e-4cf9-bf43-8b84ba9a6f52 
+May 11 21:51:38.814 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 21:51:38.925 HYPERVISOR: exec_cmd: nio create_udp udp-d6fab167-cc49-438d-ba81-d3337051854e 10000 127.0.0.1 10001 
+May 11 21:51:38.942 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-d6fab167-cc49-438d-ba81-d3337051854e 
+May 11 21:51:38.964 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 21:54:18.891 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 11 21:54:18.903 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3725-adventerprisek9-mz124-15.image-128.ghost 
+May 11 21:54:18.942 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 21:54:18.951 HYPERVISOR: exec_cmd: vm start R1 
+May 11 22:05:19.086 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 22:05:20.199 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 22:05:20.211 HYPERVISOR: exec_cmd: vm stop R1 
+May 11 22:05:20.311 VM: VM R1 shutdown.
+May 11 22:05:20.317 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 22:05:23.149 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 22:05:24.371 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 22:05:24.377 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 22:05:24.397 HYPERVISOR: exec_cmd: vm delete R1 
+May 11 22:05:24.397 VM: VM R1 destroyed.
+May 11 22:05:24.407 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 22:05:24.906 HYPERVISOR: Stopped.
+May 11 22:05:24.906 GENERAL: reset done.

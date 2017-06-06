@@ -1,0 +1,17 @@
+May 12 20:20:13.846 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 20:20:13.846 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54855.
+May 12 20:20:13.865 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 20:20:13.866 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 20:20:13.866 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 20:20:13.867 HYPERVISOR: exec_cmd: ethsw create SW3 
+May 12 20:23:56.930 HYPERVISOR: exec_cmd: ethsw rename SW3 VENTAS 
+May 12 20:29:44.013 HYPERVISOR: exec_cmd: nio create_udp udp-af16efeb-de07-47c3-8b1c-697385eb4dcd 10006 127.0.0.1 10007 
+May 12 20:29:44.023 HYPERVISOR: exec_cmd: ethsw add_nio VENTAS udp-af16efeb-de07-47c3-8b1c-697385eb4dcd 
+May 12 20:29:44.025 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS udp-af16efeb-de07-47c3-8b1c-697385eb4dcd 20 
+May 13 00:51:27.191 HYPERVISOR: exec_cmd: nio create_udp udp-29648bb3-9fa5-4004-ba0a-1b9b8e58df00 10085 127.0.0.1 10084 
+May 13 00:51:27.193 HYPERVISOR: exec_cmd: ethsw add_nio VENTAS udp-29648bb3-9fa5-4004-ba0a-1b9b8e58df00 
+May 13 00:51:27.211 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS udp-29648bb3-9fa5-4004-ba0a-1b9b8e58df00 20 
+May 13 15:08:19.874 HYPERVISOR: exec_cmd: ethsw delete VENTAS 
+May 13 15:08:19.920 HYPERVISOR: exec_cmd: hypervisor stop 
+May 13 15:08:20.061 HYPERVISOR: Stopped.
+May 13 15:08:20.061 GENERAL: reset done.

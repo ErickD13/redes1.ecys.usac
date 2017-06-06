@@ -1,0 +1,16 @@
+Mar 09 09:15:41.653 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 09 09:15:41.653 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56705.
+Mar 09 09:15:41.687 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 09 09:15:41.687 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/Practica1v2/project-files/dynamips 
+Mar 09 09:15:41.687 GENERAL: working_dir=/Users/erick/GNS3/projects/Practica1v2/project-files/dynamips
+Mar 09 09:15:41.688 HYPERVISOR: exec_cmd: ethsw create SW3 
+Mar 09 09:15:41.723 HYPERVISOR: exec_cmd: nio create_udp udp-839bd786-2b46-4c31-b952-ce4fadb01e5e 10000 127.0.0.1 10001 
+Mar 09 09:15:41.724 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-839bd786-2b46-4c31-b952-ce4fadb01e5e 
+Mar 09 09:15:41.738 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-839bd786-2b46-4c31-b952-ce4fadb01e5e 1 
+Mar 09 09:15:42.385 HYPERVISOR: exec_cmd: nio create_udp udp-c0740ba2-f66f-43d9-a8ba-3bfd5f93187b 10003 127.0.0.1 10002 
+Mar 09 09:15:42.388 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-c0740ba2-f66f-43d9-a8ba-3bfd5f93187b 
+Mar 09 09:15:42.396 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-c0740ba2-f66f-43d9-a8ba-3bfd5f93187b 1 
+Mar 09 09:16:08.982 HYPERVISOR: exec_cmd: ethsw delete SW3 
+Mar 09 09:16:09.020 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 09 09:16:09.323 HYPERVISOR: Stopped.
+Mar 09 09:16:09.323 GENERAL: reset done.

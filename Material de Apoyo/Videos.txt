@@ -1,0 +1,19 @@
+ VIDEO] Creación de Subredes con Máscaras de Longitud Variable (VLSM) URL
+
+https://www.youtube.com/watch?v=hcxmTRm_tcE&index=6&list=PL2A7l6PiV52d5pQgaunGqTwY63_3-kIv0
+
+[VIDEO]Enrutamiento InterVLAN URL
+
+https://www.youtube.com/watch?v=IeF-NQDI51M&index=6&list=PL2A7l6PiV52ct8oPgQjtt1-mc3e91APyU
+
+[VIDEO] STP URL
+
+https://www.youtube.com/watch?v=-5xeFFmXeXY&t=148s
+
+[VIDEO] Protocolos de enrutamiento dinámico URL
+
+https://www.youtube.com/watch?v=1qF8lbt_Vvc&t=3484s
+
+[VIDEO] Tabla de enrutamtiento
+
+https://www.youtube.com/watch?v=Za_s9lZbubo

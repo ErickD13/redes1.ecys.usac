@@ -1,0 +1,409 @@
+{
+    "auto_start": false,
+    "name": "Practica1v2",
+    "project_id": "af9f9fd2-68b8-4bdc-a111-e490df62dc92",
+    "revision": 4,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from SW3 port 1 to SW1 port 4",
+                "destination_node_id": 1,
+                "destination_port_id": 4,
+                "id": 2,
+                "source_node_id": 3,
+                "source_port_id": 17
+            },
+            {
+                "description": "Link from WEB DESA port Ethernet0 to SW3 port 2",
+                "destination_node_id": 3,
+                "destination_port_id": 18,
+                "id": 3,
+                "source_node_id": 7,
+                "source_port_id": 28
+            },
+            {
+                "description": "Link from SW1 port 2 to Administrador 1 port Ethernet0",
+                "destination_node_id": 5,
+                "destination_port_id": 26,
+                "id": 4,
+                "source_node_id": 1,
+                "source_port_id": 2
+            },
+            {
+                "description": "Link from SW1 port 3 to Desarrollador 1 port Ethernet0",
+                "destination_node_id": 6,
+                "destination_port_id": 27,
+                "id": 5,
+                "source_node_id": 1,
+                "source_port_id": 3
+            },
+            {
+                "description": "Link from WEB ADMIN port Ethernet0 to SW3 port 3",
+                "destination_node_id": 3,
+                "destination_port_id": 19,
+                "id": 6,
+                "source_node_id": 8,
+                "source_port_id": 29
+            },
+            {
+                "description": "Link from SW1 port 1 to Cloud 1 port nio_udp:30000:192.167.6.1:20000",
+                "destination_node_id": 4,
+                "destination_port_id": 25,
+                "id": 7,
+                "source_node_id": 1,
+                "source_port_id": 1
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Ethernet switch",
+                "device_id": "fd3af181-dbe8-4b35-af41-458f96d174b6",
+                "id": 1,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW1",
+                    "x": 20.8359375,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to Cloud 1 on port nio_udp:30000:192.167.6.1:20000",
+                        "id": 1,
+                        "link_id": 7,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "dot1q",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to Administrador 1 on port Ethernet0",
+                        "id": 2,
+                        "link_id": 4,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to Desarrollador 1 on port Ethernet0",
+                        "id": 3,
+                        "link_id": 5,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to SW3 on port 1",
+                        "id": 4,
+                        "link_id": 2,
+                        "name": "4",
+                        "nio": "NIO_UDP",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW1"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -74.5,
+                "y": -58.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "6135b462-cd5c-4924-a798-733ff98a5987",
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW3",
+                    "x": 20.8359375,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to SW1 on port 4",
+                        "id": 17,
+                        "link_id": 2,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to WEB DESA on port Ethernet0",
+                        "id": 18,
+                        "link_id": 3,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to WEB ADMIN on port Ethernet0",
+                        "id": 19,
+                        "link_id": 6,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW3"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -72.5,
+                "y": -196.0
+            },
+            {
+                "description": "Cloud",
+                "id": 4,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Cloud 1",
+                    "x": 55.6015625,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to SW1 on port 1",
+                        "id": 25,
+                        "link_id": 7,
+                        "name": "nio_udp:30000:192.167.6.1:20000",
+                        "nio": "NIO_UDP",
+                        "stub": true
+                    }
+                ],
+                "properties": {
+                    "name": "Cloud 1",
+                    "nios": [
+                        "nio_udp:30000:192.167.6.1:20000"
+                    ]
+                },
+                "server_id": 1,
+                "type": "Cloud",
+                "x": 110.5,
+                "y": -159.0
+            },
+            {
+                "description": "VirtualBox VM",
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Administrador 1",
+                    "x": -13.6171875,
+                    "y": -25.0
+                },
+                "linked_clone": false,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 2",
+                        "id": 26,
+                        "link_id": 4,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "console": 5000,
+                    "enable_remote_console": false,
+                    "headless": false,
+                    "name": "Administrador 1",
+                    "ram": 512,
+                    "use_any_adapter": true,
+                    "vmname": "Administrador 1"
+                },
+                "server_id": 1,
+                "type": "VirtualBoxVM",
+                "vm_id": "f23a6ce5-83ee-4730-b2e1-ce249862cd8b",
+                "x": -149.5,
+                "y": 83.5
+            },
+            {
+                "description": "VirtualBox VM",
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Desarrollador 1",
+                    "x": -11.7578125,
+                    "y": -25.0
+                },
+                "linked_clone": false,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 3",
+                        "id": 27,
+                        "link_id": 5,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "console": 5001,
+                    "enable_remote_console": false,
+                    "headless": false,
+                    "name": "Desarrollador 1",
+                    "ram": 512,
+                    "use_any_adapter": true,
+                    "vmname": "Desarrollador 1"
+                },
+                "server_id": 1,
+                "type": "VirtualBoxVM",
+                "vm_id": "a8f71805-290e-4b1d-b666-fe3de0445fd4",
+                "x": 4.5,
+                "y": 82.5
+            },
+            {
+                "description": "VirtualBox VM",
+                "id": 7,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "WEB DESA",
+                    "x": 2.703125,
+                    "y": -25.0
+                },
+                "linked_clone": false,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW3 on port 2",
+                        "id": 28,
+                        "link_id": 3,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "console": 5002,
+                    "enable_remote_console": false,
+                    "headless": false,
+                    "name": "WEB DESA",
+                    "ram": 2048,
+                    "use_any_adapter": true,
+                    "vmname": "Servidor 1 Grupo 6"
+                },
+                "server_id": 1,
+                "type": "VirtualBoxVM",
+                "vm_id": "800aec8d-7c7f-4d74-b570-690847f55cf0",
+                "x": -163.5,
+                "y": -320.5
+            },
+            {
+                "description": "VirtualBox VM",
+                "id": 8,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "WEB ADMIN",
+                    "x": -1.46875,
+                    "y": -25.0
+                },
+                "linked_clone": false,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW3 on port 3",
+                        "id": 29,
+                        "link_id": 6,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "console": 5003,
+                    "enable_remote_console": false,
+                    "headless": false,
+                    "name": "WEB ADMIN",
+                    "ram": 1024,
+                    "use_any_adapter": true,
+                    "vmname": "Servidor 2 Grupo 6"
+                },
+                "server_id": 1,
+                "type": "VirtualBoxVM",
+                "vm_id": "dd064fda-34a6-476c-b367-fc0c84d3460e",
+                "x": -0.5,
+                "y": -320.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.6.10",
+                "x": -155.0,
+                "y": 154.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.16.10\n",
+                "x": -2.0,
+                "y": 156.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.16.100",
+                "x": -176.0,
+                "y": -252.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.6.100",
+                "x": -7.0,
+                "y": -253.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.3"
+}

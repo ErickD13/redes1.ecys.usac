@@ -1,0 +1,23 @@
+May 12 20:03:26.061 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 12 20:03:26.061 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54759.
+May 12 20:03:26.078 HYPERVISOR: exec_cmd: hypervisor version 
+May 12 20:03:26.079 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips 
+May 12 20:03:26.079 GENERAL: working_dir=/Users/erick/Archivos/USAC/Séptimo Semestre/Redes de Computadoras 1/Laboratorio/Proyecto/[REDES1]ProyectoV1/project-files/dynamips
+May 12 20:03:26.080 HYPERVISOR: exec_cmd: ethsw create SW5 
+May 12 20:03:48.339 HYPERVISOR: exec_cmd: ethsw rename SW5 VENTAS(2) 
+May 12 20:15:07.808 HYPERVISOR: exec_cmd: nio create_udp udp-a6e49d8c-d3cc-4bcf-b319-83d19cf6aa07 10040 127.0.0.1 10041 
+May 12 20:15:07.818 HYPERVISOR: exec_cmd: ethsw add_nio VENTAS(2) udp-a6e49d8c-d3cc-4bcf-b319-83d19cf6aa07 
+May 12 20:15:07.830 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-a6e49d8c-d3cc-4bcf-b319-83d19cf6aa07 1 
+May 12 20:15:38.245 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-a6e49d8c-d3cc-4bcf-b319-83d19cf6aa07 10 
+May 12 20:29:01.601 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-a6e49d8c-d3cc-4bcf-b319-83d19cf6aa07 20 
+May 13 00:50:27.947 HYPERVISOR: exec_cmd: nio create_udp udp-73e60668-51a6-45e7-99c3-05da2813273f 10083 127.0.0.1 10082 
+May 13 00:50:27.949 HYPERVISOR: exec_cmd: ethsw add_nio VENTAS(2) udp-73e60668-51a6-45e7-99c3-05da2813273f 
+May 13 00:50:27.958 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-73e60668-51a6-45e7-99c3-05da2813273f 20 
+May 13 11:25:31.443 HYPERVISOR: exec_cmd: nio create_udp udp-292d5758-384c-4ab6-adcb-27d4040dc45b 10052 127.0.0.1 10053 
+May 13 11:25:31.466 HYPERVISOR: exec_cmd: ethsw add_nio VENTAS(2) udp-292d5758-384c-4ab6-adcb-27d4040dc45b 
+May 13 11:25:31.487 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-292d5758-384c-4ab6-adcb-27d4040dc45b 1 
+May 13 11:44:43.554 HYPERVISOR: exec_cmd: ethsw set_access_port VENTAS(2) udp-292d5758-384c-4ab6-adcb-27d4040dc45b 20 
+May 13 15:08:19.872 HYPERVISOR: exec_cmd: ethsw delete VENTAS(2) 
+May 13 15:08:19.937 HYPERVISOR: exec_cmd: hypervisor stop 
+May 13 15:08:20.071 HYPERVISOR: Stopped.
+May 13 15:08:20.071 GENERAL: reset done.

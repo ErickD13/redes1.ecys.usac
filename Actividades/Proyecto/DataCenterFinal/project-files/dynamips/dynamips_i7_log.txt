@@ -1,0 +1,18 @@
+May 11 21:14:58.843 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 11 21:14:58.846 HYPERVISOR: Started on IP = 192.168.6.20, TCP port = 64265.
+May 11 21:14:59.118 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 21:14:59.164 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DataCenterFinal\project-files\dynamips 
+May 11 21:14:59.424 GENERAL: working_dir=C:\Mauricio\Universidad\2017 1er Semestre\redes1\Practica2\DataCenterFinal\project-files\dynamips
+May 11 21:14:59.478 HYPERVISOR: exec_cmd: ethsw create SW1 
+May 11 21:14:59.965 HYPERVISOR: exec_cmd: nio create_udp udp-2b929a30-b376-468a-9e8d-d98c4d37a748 10000 192.168.6.20 10001 
+May 11 21:15:00.047 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-2b929a30-b376-468a-9e8d-d98c4d37a748 
+May 11 21:15:00.093 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-2b929a30-b376-468a-9e8d-d98c4d37a748 20 
+May 11 21:15:00.157 HYPERVISOR: exec_cmd: nio create_udp udp-84809702-2abb-4fa4-9d8c-99f8a029dce9 10002 192.168.6.20 10003 
+May 11 21:15:00.218 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-84809702-2abb-4fa4-9d8c-99f8a029dce9 
+May 11 21:15:00.281 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-84809702-2abb-4fa4-9d8c-99f8a029dce9 10 
+May 11 21:15:00.649 HYPERVISOR: exec_cmd: nio create_udp udp-3a1e23a9-111a-4084-8ad3-8e582a2da5e3 10005 192.168.6.20 10004 
+May 11 21:15:00.741 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3a1e23a9-111a-4084-8ad3-8e582a2da5e3 
+May 11 21:15:00.812 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-3a1e23a9-111a-4084-8ad3-8e582a2da5e3 1 
+May 11 21:15:01.004 HYPERVISOR: exec_cmd: nio create_udp udp-1b7f69d6-3569-4ca6-a965-5824e07c5005 10009 192.168.6.20 10008 
+May 11 21:15:01.077 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-1b7f69d6-3569-4ca6-a965-5824e07c5005 
+May 11 21:15:01.149 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-1b7f69d6-3569-4ca6-a965-5824e07c5005 1 

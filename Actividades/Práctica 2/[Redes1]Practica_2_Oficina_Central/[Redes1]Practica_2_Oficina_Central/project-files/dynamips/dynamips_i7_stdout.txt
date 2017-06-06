@@ -1,0 +1,7 @@
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor
+vtty_thread: select: Bad file descriptor

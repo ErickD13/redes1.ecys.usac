@@ -1,0 +1,10 @@
+Mar 19 11:51:12.723 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 19 11:51:12.723 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58060.
+Mar 19 11:51:12.744 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 11:51:12.745 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/erick/GNS3/projects/InterVlan/project-files/dynamips 
+Mar 19 11:51:12.745 GENERAL: working_dir=/Users/erick/GNS3/projects/InterVlan/project-files/dynamips
+Mar 19 11:51:12.746 HYPERVISOR: exec_cmd: ethsw create SW1 
+Mar 19 11:52:28.281 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Mar 19 11:52:28.282 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 11:52:28.318 HYPERVISOR: Stopped.
+Mar 19 11:52:28.318 GENERAL: reset done.
